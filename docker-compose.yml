@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  # MySQL 数据库
+  mysql:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password_123
+      MYSQL_DATABASE: vue_flask_db
+      MYSQL_USER: vue_flask_user
+      MYSQL_PASSWORD: user_password_456
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  # 后端服务
+  backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    restart: always
+    depends_on:
+      - mysql
+    environment:
+      FLASK_CONFIG: production
+      DATABASE_URI: mysql+pymysql://vue_flask_user:user_password_456@mysql/vue_flask_db
+      JWT_SECRET_KEY: your_jwt_secret_key_789
+      ENCRYPT_SECRET_KEY: your_encrypt_secret_key_012
+      SECRET_KEY: your_flask_secret_key_345
+      DATA_API_URL: https://api.polymarket.com/v1
+      CLOB_HOST: clob.polymarket.com
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+
+  # 前端服务
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend.Dockerfile
+    restart: always
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    volumes:
+      - ./frontend:/app
+
+# 数据持久化卷
+volumes:
+  mysql_data:
