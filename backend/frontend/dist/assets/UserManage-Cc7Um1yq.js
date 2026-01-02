@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper-BCo6x5W8.js";import{c as a,a as s,o}from"./index-CpsPTIIb.js";const r={class:"user-manage-container"},n=e({__name:"UserManage",setup:e=>(e,n)=>(o(),a("div",r,[...n[0]||(n[0]=[s("h2",null,"用户管理",-1)])]))},[["__scopeId","data-v-e4e90d8e"]]);export{n as default};

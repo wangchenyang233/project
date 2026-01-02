@@ -1,0 +1,1 @@
+import{_ as a}from"./_plugin-vue_export-helper-BCo6x5W8.js";import{c as o,a as s,o as e}from"./index-CpsPTIIb.js";const n={class:"login-container"},t=a({__name:"Login",setup:a=>(a,t)=>(e(),o("div",n,[...t[0]||(t[0]=[s("h2",null,"用户登录",-1)])]))},[["__scopeId","data-v-7b9d1c50"]]);export{t as default};
