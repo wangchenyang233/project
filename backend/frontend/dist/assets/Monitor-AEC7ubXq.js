@@ -1,1 +1,0 @@
-import{_ as o}from"./_plugin-vue_export-helper-BCo6x5W8.js";import{c as a,a as e,o as s}from"./index-CpsPTIIb.js";const t={class:"monitor-container"},r=o({__name:"Monitor",setup:o=>(o,r)=>(s(),a("div",t,[...r[0]||(r[0]=[e("h2",null,"活动监控",-1)])]))},[["__scopeId","data-v-45e8f8a3"]]);export{r as default};

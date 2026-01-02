@@ -1,1 +1,0 @@
-import{_ as a}from"./_plugin-vue_export-helper-BCo6x5W8.js";import{c as t,a as e,o as s}from"./index-CpsPTIIb.js";const i={class:"activity-container"},o=a({__name:"Activity",setup:a=>(a,o)=>(s(),t("div",i,[...o[0]||(o[0]=[e("h2",null,"活动查询",-1)])]))},[["__scopeId","data-v-bbe3a23c"]]);export{o as default};

@@ -1,1 +1,0 @@
-import{_ as a}from"./_plugin-vue_export-helper-BCo6x5W8.js";import{c as e,a as o,o as s}from"./index-CpsPTIIb.js";const p={class:"copy-trade-container"},r=a({__name:"CopyTrade",setup:a=>(a,r)=>(s(),e("div",p,[...r[0]||(r[0]=[o("h2",null,"自动跟单",-1)])]))},[["__scopeId","data-v-df6bf85e"]]);export{r as default};

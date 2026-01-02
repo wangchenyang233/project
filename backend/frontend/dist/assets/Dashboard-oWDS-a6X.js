@@ -1,1 +1,0 @@
-import{_ as a}from"./_plugin-vue_export-helper-BCo6x5W8.js";import{c as s,a as o,o as e}from"./index-CpsPTIIb.js";const r={class:"dashboard-container"},d=a({__name:"Dashboard",setup:a=>(a,d)=>(e(),s("div",r,[...d[0]||(d[0]=[o("h2",null,"仪表盘",-1)])]))},[["__scopeId","data-v-4adfcc62"]]);export{d as default};
